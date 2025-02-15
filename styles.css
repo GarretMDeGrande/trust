@@ -1,0 +1,638 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+    color: black;
+}
+
+p {
+    margin: 7px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5dc;
+    color: black;
+    position: relative;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+/* Desktop Navigation Links */
+.nav-links {
+    gap: 20px; /* Space between links */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-right: 10px;
+    padding: 0;
+}
+
+/* Mobile Navigation Dropdown */
+.nav-toggle {
+    display: none; /* Hidden on desktop */
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.nav-links {
+    
+    flex-direction: column; /* Dropdown style for mobile */
+    width: 100%; /* Full width for dropdown */
+    text-align: center;
+}
+
+.nav-links.active {
+    display: flex; /* Show dropdown when active */
+}
+
+/* Donate Button */
+.donate-button {
+    padding: 10px 20px;
+    background-color: #c5b358;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.donate-button1 {
+    padding: 10px 20px;
+    background-color: #f5f5dc;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #daa520;
+}
+
+.donation-image {
+    flex: 1; /* Allow the image to take up more space */
+    text-align: center;
+}
+
+.donation-image img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #daa520; /* Optional: adds a border around the image */
+    border-radius: 5px; /* Optional: rounds the corners of the image */
+}
+
+.donation-image figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 5px; /* Space between text and image */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.text-content {
+    margin-top: 50px;
+    flex: 1; /* Allow the text to take up more space */
+    line-height: 1.4;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #daa520;
+    padding: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: black;
+}
+
+
+/* About Section */
+.about, .about2 {
+    padding: 20px;
+}
+
+.about {
+    background-color: #ffffff;
+    color: black;
+}
+
+.about2 {
+        padding: 64px 24px;
+        justify-content: center;
+            align-items: flex-start;
+    background-color: #daa520;
+    color: black;
+}
+
+.about3 {
+    padding: 20px;
+    background-color: #daa520;
+    color: #002244;
+    text-align: center;
+}
+
+.about3 h1 {
+    font-size: 36px;
+}
+
+.about ul, .about2 ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.btn1 {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    background-color: #daa520;
+    color: black;
+    border-radius: 24px;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: flex
+;
+}
+
+.about .btn {
+    display: inline-block;
+    background-color: #daa520;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about2 .btn {
+    display: inline-block;
+    background-color: #f5f5dc;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.navbar .btn {
+    background-color: #c5b358;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.about .btn:hover {
+    background-color: #c5b358;
+}
+
+.about2 .btn:hover {
+    background-color: #c5b358;
+}
+
+.about .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin: 20px 0;
+}
+
+.about img {
+    max-width: 100%; /* Scale the image width relative to its container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better aesthetics */
+}
+
+.about2 .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin: 20px 0;
+}
+
+.about2 img {
+    max-width: 100%; /* Scale the image width relative to its container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better aesthetics */
+}
+
+/* Contact Section */
+.contact, .contact1 {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact1 {
+    padding: 20px; /* Adjust padding for mobile-friendly spacing */
+    background-color: #f5f5dc;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact1 form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between form elements */
+    width: 100%;
+    max-width: 30%; /* Prevent form from exceeding container width */
+    margin: 0 auto; /* Center the form */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    border-radius: solid 1px black;
+}
+
+.contact1 input, 
+.contact1 textarea {
+    width: 100%; /* Ensure inputs take full width of parent */
+    max-width: 100%; /* Prevent inputs from overflowing */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+.contact1 textarea {
+    padding: 10px;
+    height: 150px; /* Increase the height for more room */
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center; /* Center the text inside the textarea */
+    resize: vertical; /* Allow users to resize vertically */
+}
+
+.contact1 input[type="submit"] {
+    background-color: #daa520;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+}
+
+.contact1 input[type="submit"]:hover {
+    background-color: #0056A5;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-position: inside;
+}
+
+
+.columns {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center, space-between;
+    text-align: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+    display: flex
+;
+}
+
+.columns1 {
+    display: flex;
+    justify-content: space-between; /* Ensures both columns stay side by side */
+    align-items: center; /* Centers content vertically */
+    width: 100%;
+    max-width: 1200px;
+;
+}
+
+
+
+.pill-container {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    display: flex
+;
+}
+
+.pill {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    border: 1px solid black;
+    border-radius: 24px;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    display: flex
+;
+}
+
+.pill-text {
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.column-grey {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    background-color: #c5b358;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    position: static;
+    bottom: 30px;
+    width: 100%;
+}
+
+.column-third {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    display: flex;
+}
+
+
+.column-grey1 {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    background-color: ;#c5b358;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    position: static;
+    bottom: 30px;
+    width: 100%;
+}
+
+.column-white {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    background-color: #f5f5dc;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    position: static;
+    bottom: 30px;
+    width: 100%;
+}
+
+.column-white1 {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    background-color: #f5f5dc;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    position: static;
+    bottom: 30px;
+    width: 100%;
+}
+
+.column-grey.column-third,
+.column-white.column-third {
+    width: 40%;
+}
+
+.intro {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    display: flex
+;
+}
+
+.list-col {
+    width: 100%;
+}
+
+.expertise-row {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 1px solid black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex
+;
+}
+
+.content-horizontal {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    width: 100%;
+    display: flex
+;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex
+;
+}
+
+.container {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    display: flex
+;
+}
+
+
+.content.center-icon {
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.img-icon-lg {
+    color: var(--white);
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 80%; /* Ensures image scales properly */
+    height: auto;
+}
+
+.column {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    display: flex
+;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5dc;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: block; /* Show hamburger menu icon on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hidden on mobile by default */
+        flex-direction: column; /* Dropdown style for mobile */
+        width: 100%; /* Full width for dropdown */
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show dropdown when toggled */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero, .about, .about2, .contact, .contact1 {
+        padding: 10px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .about img {
+        width: 90%; /* Slight padding for smaller screens */
+        margin: 0 auto; /* Center image on smaller devices */
+    }
+
+    .donate-button {
+        margin-top: 10px;
+    }
+
+    .contact1 textarea {
+        width: 100%; /* Wider textarea on larger screens */
+        margin: 0 auto; /* Center the textarea horizontally */
+    }
+
+    .contact1 form {
+        padding: 0 10px; /* Add some horizontal padding */
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+        gap: 10px;
+    }
+
+    .columns {
+        width: 100%;
+    }
+
+    .columns {
+        width: 100%;
+    }
+
+    .donation-image {
+        text-align: center;
+    }
+}

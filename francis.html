@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonprofit Organization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="index.html" class="nav-logo"><img src="trust2.jpg" alt="Logo"></a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn">Book a Consultation</a>
+    </div>
+    <a href="#" class="donate-button" id="donateButton">Donate</a>
+</nav>
+
+<script>
+    // Toggle navigation for mobile
+    document.getElementById('navToggle').addEventListener('click', function () {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+    <!-- Main Content -->
+    <header class="hero">
+        <h1>Dr. Francis Gadigbe</h1>
+        <img src="francis.jpg">
+        <p>Relationship and Trauma Specialist.</p>
+        <p>Ed.D., LMFTA., MHP</p>
+        <br>
+        </header>
+     <section class="about">
+    <h2>About Dr. Francis Gadigbe</h2>
+    <p>Dr. FrancisGadigbe, a graduate of Seattle University is a marriage and family therapist licensed in Washington State. I have been providing psychotherapy for the past nine years. I assess, diagnose, and treat patients with mood disorders, relationship problems, anxiety, depression, and multicultural issues. I have specialized experience and training in assisting those overcoming trauma, including domestic violence and couples' dysfunctional communication.</p>
+
+    <p>Treatment approaches include but are not limited to Cognitive Behavioral Therapy (CBT), Dialectical Behavioral Therapy (DBT), and Acceptance Commitment Therapy (ACT). My goal as a psychotherapist is to provide all my patients with a safe environment to share their experiences comfortably. I always treat my clients with respect, trust, empathy, and compassion. I also take interventions from other therapeutic modalities most effective for a client's unique situation. I am committed to providing an experience that values and supports people's path to well-being. I value diversity and inclusion, operate holistically, and invite people to incorporate spirituality into their counseling if they wish to do so.</p>
+
+    <p>My skills and experience allow me to offer care to people experiencing various issues, including but not limited to depression, bipolar, anxiety, ADHD, relationship issues, family issues, personal growth, abuse & trauma recovery, grief & loss, school counseling, and career issues. I participate in work related to marginalized, exploited, and oppressed people. As a therapist, I always manage equity and diversity in ways that will bring about positive change for all people, including my patients. I respect every individual, regardless of race, color, religion, sex, or sexual orientation, to have access to mental health services and interventions, be treated as human, and be given opportunities to develop their potential. I am encouraged by my cultural background that every individual needs to go beyond accepting those different from themselves to a position of cultural humility that requires us to question our history and experiences about working in partnership with others. Don't hesitate to contact me; I am willing and ready to journey with you as you seek good health and wholeness.</p>
+    <div class="image-container">
+    </div>
+    <br>
+    <a href="contact.html" class="btn">Book a Consultation</a>
+</section>
+    <footer>
+        <p>&copy; 2025 Trust Clinic | Designed By: Garret DeGrande</p>
+    </footer>
+
+    <!-- PayPal Donate Button -->
+    <script>
+        document.getElementById('donateButton').addEventListener('click', function() {
+            window.location.href = 'https://www.paypal.com/donate?hosted_button_id=9MAGXPYER77YQ';
+        });
+    </script>
+
+</body>
+</html>

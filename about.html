@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nonprofit Organization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="index.html" class="nav-logo"><img src="trust2.jpg" alt="Logo"></a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn">Book a Consultation</a>
+    </div>
+    <a href="#" class="donate-button" id="donateButton">Donate</a>
+</nav>
+
+<script>
+    // Toggle navigation for mobile
+    document.getElementById('navToggle').addEventListener('click', function () {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+<header class="hero">
+        <h1>About Trust Clinic</h1>
+        <img src="trust.jpg">
+        <p>Trust Clinic is a 501(c)3 nonprofit Mental Healthcare organization in Washington State.</p>
+        <p>Therapy sessions are completely Telehealth.
+        <br>
+        </header>
+
+    <!-- Main Content -->
+    <section class="about">
+        <h1>Who We Are</h1>
+        <p>At Trust Clinic, we are a dedicated team of professionals committed to making mental health support accessible to those who need it most. We believe that everyone, regardless of their background or circumstances, deserves the opportunity to heal and thrive. Our clinic operates with a deep sense of compassion, focusing on providing care for the vulnerable members of our communities who might otherwise be unable to afford therapy services.</p>
+    </section>
+
+    <section class="about2">
+        
+        <h2>What We Do</h2>
+        <p>We provide affordable, low-rate therapy sessions to individuals who are struggling with mental health challenges. Our goal is to create a safe and supportive environment where people can find the help they need to navigate life's difficulties. By offering these services at reduced rates, we ensure that therapy is not a luxury, but a resource that everyone can access.</p>
+        
+        <p>We also work with a network of professionals and organizations to extend our outreach, ensuring that no one is left without the support they deserve.</p>
+        <br>
+        <a href="contact.html" class="btn">Book a Consultation</a>
+    </section>
+
+    <section class="about">
+        <h2>Our Focus</h2>
+        <p>At Trust Clinic, our primary focus is on supporting vulnerable individuals, including those from low-income backgrounds, marginalized groups, and those facing personal hardships. We understand that mental health is a critical aspect of overall well-being, and we aim to break down the financial barriers that prevent people from seeking help. Our mission is to be a beacon of hope and healing for those in need.</p>
+        <br>
+        <a href="services.html" class="btn">Specialties</a>
+    </section>
+
+    <section class="about2">
+            <h2>How You Can Help</h2>
+            <p>We invite individuals, businesses, and organizations to join us in making a difference. Your generosity can help us sustain and grow this essential service. There are several ways you can contribute:</p>
+
+            <ul>
+                <li><b>Donate: </b>Financial donations allow us to keep therapy sessions affordable for those who need them most.</li>
+                <li><b>Volunteer: </b>If you are a mental health professional or someone with skills to share, your time and expertise can make a profound impact.</li>
+                <li><b>Partner: </b>Organizations can partner with us to extend our reach and provide additional resources to those who need them.</li>
+            </ul>
+
+            
+            <p>Together, we can make mental health care accessible for everyone, regardless of their circumstances.</p>
+            <br>
+            <a href="#" class="donate-button1" id="donateButton">Donate</a>
+</section>
+
+    <footer>
+        <p>&copy; 2025 Trust Clinic | Designed By: Garret DeGrande</p>
+    </footer>
+
+    <!-- PayPal Donate Button -->
+    <script>
+        document.getElementById('donateButton').addEventListener('click', function() {
+            window.location.href = 'https://www.paypal.com/donate?hosted_button_id=9MAGXPYER77YQ';
+        });
+    </script>
+
+</body>
+</html>

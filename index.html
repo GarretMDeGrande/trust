@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonprofit Organization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav class="navbar">
+    <a href="index.html" class="nav-logo"><img src="trust2.jpg" alt="Logo"></a>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn">Book a Consultation</a>
+    </div>
+    <a href="#" class="donate-button" id="donateButton">Donate</a>
+</nav>
+
+<script>
+    // Toggle navigation for mobile
+    document.getElementById('navToggle').addEventListener('click', function () {
+        const navLinks = document.getElementById('navLinks');
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+    <!-- Main Content -->
+    <header class="hero">
+        <h1>Welcome to Trust Clinic</h1>
+        <img src="trust.jpg">
+        <p>Trust Clinic is a 501(c)3 nonprofit Mental Healthcare organization in Washington State.</p>
+        <p>Therapy sessions are completely Telehealth.
+        <br>
+        </header>
+     <section class="about">
+    <h2>Our Mission</h2>
+    <p>Our mission at Trust Clinic is to provide affordable therapy services to vulnerable individuals in our communities. We are committed to offering low-rate sessions to those in need, while actively seeking donations from individuals and organizations to sustain this initiative.</p>
+    <div class="image-container">
+    </div>
+    <br>
+    <a href="about.html" class="btn">Learn About Trust</a>
+</section>
+<section class="about2">
+    <div class="columns">
+        <div class="content">
+            <div class="intro">
+    <div class="column">
+    <h1>Dr. Francis Gadigbe, Relationship and Trauma Specialist Ed.D., LMFTA., MHP</h1>
+    
+    <li><b>He specializes in Relationship Issues, Depression, and Anxiety</b></li>
+   <li><b>He speaks Twi, Ewe, Fanti, Kotokoli, Fon, as well as English</b></li>
+
+</div>
+</div>
+</div>
+    <div class="image-container">
+        <img src="francis.jpg" alt="Amazon Donation" />
+</div>
+</div>
+    <br>
+    <a href="francis.html" class="btn">Learn About Francis</a>
+    <a href="contact.html" class="btn">Book a Consultation</a>
+</section>
+<section class="about">
+    <div class="columns">
+        <div class="content">
+            <div class="intro">
+    <h2>Our Client Focus</h2>
+    </div>
+</div>
+</div>
+    <div class="columns">
+        <div class="column-grey1">
+            <div class="content">
+            <div class="intro">
+            <h1>Participants</h1>
+            <div class="pill-container">
+                <div class="pill">
+                    <p class="pill-text">Individuals</p>
+                </div>
+                <div class="pill">
+                    <p class="pill-text">Couples</p>
+                </div>
+                <div class="pill">
+                    <p class="pill-text">Families</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column-white1">
+            <div class="content">
+            <div class="intro">
+            <h1>Age</h1>
+            <div class="pill-container">
+                <div class="pill">
+                    <p class="pill-text">Teens</p>
+                </div>
+                <div class="pill">
+                    <p class="pill-text">Adults</p>
+                </div>
+                <div class="pill">
+                    <p class="pill-text">Seniors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column-grey1">
+            <div class="content">
+            <div class="intro">
+            <h1>Communities</h1>
+            <div class="pill-container">
+                <div class="pill">
+                    <p class="pill-text">All Communities</p>
+                </div>
+                <div class="pill">
+                    <p class="pill-text">Communities in need of assistance</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="columns">
+        <div class="column-white1">
+            <div class="content">
+            <div class="intro">
+            <h1>Ethnicity</h1>
+            <div class="pill-container">
+                <div class="pill">
+                    <p class="pill-text"><b>Everybody</b></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <br>
+    
+    <a href="services.html" class="btn">Specializes In</a>
+
+</section>
+    <footer>
+        <p>&copy; 2025 Trust Clinic | Designed By: Garret DeGrande</p>
+    </footer>
+
+    <!-- PayPal Donate Button -->
+    <script>
+        document.getElementById('donateButton').addEventListener('click', function() {
+            window.location.href = 'https://www.paypal.com/donate?hosted_button_id=9MAGXPYER77YQ';
+        });
+    </script>
+
+</body>
+</html>
