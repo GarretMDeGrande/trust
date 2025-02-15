@@ -265,7 +265,7 @@ p {
 
 .contact1 {
     padding: 20px; /* Adjust padding for mobile-friendly spacing */
-    background-color: #f5f5dc;
+    background-color: #daa520;
 }
 
 .contact {
@@ -303,7 +303,7 @@ p {
 }
 
 .contact1 input[type="submit"] {
-    background-color: #daa520;
+    background-color: #f5f5dc;
     color: black;
     border: none;
     cursor: pointer;
