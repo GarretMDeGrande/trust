@@ -625,14 +625,37 @@ footer a {
     }
 
     .columns {
-        width: 100%;
+        flex-direction: column;
+        text-align: center;
     }
 
-    .columns {
+    .column-grey, .column-white {
         width: 100%;
     }
 
     .donation-image {
         text-align: center;
+    }
+}
+
+    /* Mobile Responsive Fixes */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .columns {
+        flex-direction: column;
     }
 }
