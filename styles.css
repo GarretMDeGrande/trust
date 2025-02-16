@@ -625,7 +625,7 @@ footer a {
     }
 
     .columns {
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -656,6 +656,6 @@ footer a {
     }
 
     .columns {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
