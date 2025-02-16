@@ -406,7 +406,7 @@ ol {
 .column-grey1 {
     grid-column-gap: 24px;
     grid-row-gap: 24px;
-    background-color: ;#c5b358;
+    background-color: #c5b358;
     border-radius: 24px;
     flex-direction: column;
     justify-content: flex-start;
@@ -642,7 +642,7 @@ footer a {
 @media (max-width: 1024px) {
     .nav-links {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         text-align: center;
     }
@@ -656,6 +656,6 @@ footer a {
     }
 
     .columns {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
