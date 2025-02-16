@@ -625,7 +625,7 @@ footer a {
     }
 
     .columns {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
@@ -642,7 +642,7 @@ footer a {
 @media (max-width: 1024px) {
     .nav-links {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         text-align: center;
     }
